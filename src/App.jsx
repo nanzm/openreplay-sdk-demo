@@ -1,8 +1,6 @@
 import React from "react";
-import * as Sentry from "@sentry/react";
 
-import SentryConfig from "./sentry/Config";
-
+import SdkConfig from "./sdk/Config";
 import Ajax from "./view/Ajax";
 import Error from "./view/Error";
 import HashChange from "./view/HashChange";
@@ -13,12 +11,9 @@ import PromiseError from "./view/PromiseError";
 import Stat from "./view/Stat";
 
 function App() {
-  React.useEffect(() => {
-  }, []);
-
   return (
-    <Sentry.ErrorBoundary fallback={<p>An error has occurred</p>} showDialog>
-      <SentryConfig/>
+    <>
+      <SdkConfig/>
       <div className="section-groups">
         <Error/>
         <Ajax/>
@@ -29,8 +24,8 @@ function App() {
         <PromiseError/>
         <Stat/>
       </div>
-    </Sentry.ErrorBoundary>
+    </>
   );
 }
 
-export default Sentry.withProfiler(App);
+export default App;

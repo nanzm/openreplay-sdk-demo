@@ -1,7 +1,7 @@
 import "react-app-polyfill/ie9";
 import "react-app-polyfill/stable";
 
-import "./sentry";
+import "./sdk";
 
 import React from "react";
 import ReactDOM from "react-dom";

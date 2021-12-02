@@ -21,19 +21,8 @@ function Config() {
         <h1>sdk 配置</h1>
 
         <div className="form-item">
-          <label>dsn: </label>
-          <input type="text" name="dsn" defaultValue={defaultConfig.dsn}/>
-        </div>
-
-
-        <div className="form-item">
-          <label>environment: </label>
-          <input type="text" name="environment" defaultValue={defaultConfig.environment}/>
-        </div>
-
-        <div className="form-item">
-          <label>release: </label>
-          <input type="text" name="release" defaultValue={defaultConfig.release}/>
+          <label>projectKey: </label>
+          <input type="text" name="projectKey" defaultValue={defaultConfig.projectKey}/>
         </div>
 
         <div className="form-item submit">

@@ -10,9 +10,7 @@
     "release": "npx zx ./release.mjs"
   },
   "dependencies": {
-    "@sentry/react": "^6.13.3",
-    "@sentry/tracing": "^6.13.3",
-    "perfume.js": "^6.2.0",
+    "@openreplay/tracker": "^3.4.9",
     "react": "^17.0.2",
     "react-app-polyfill": "^2.0.0",
     "react-dom": "^17.0.2",
@@ -20,7 +18,6 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "@sentry/cli": "^1.69.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
